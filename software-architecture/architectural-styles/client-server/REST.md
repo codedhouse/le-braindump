@@ -22,7 +22,7 @@
 1. clients can cache responses
 1. the API can run behind other layers, e.g. a proxy or load balancer
 1. the API can return code on demand that can be used to extend the client
-1. uniform interface - includes usng URIs
+1. uniform interface - includes using URIs
 
 ## Client requests
 
