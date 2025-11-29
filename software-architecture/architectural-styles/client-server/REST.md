@@ -6,7 +6,9 @@
 
 ## Terms
 
-- **api**
+### General
+
+- **API**
 - **caching**
 - **client**
 - **resource**
@@ -14,6 +16,11 @@
 - **state**
 - **stateless**: data is stored outside the server
 - **uniform resource identifier (URI)**
+
+### JavaScript
+
+- **Asynchronous JavaScript and XML (Ajax)**
+- **XMLHttpRequest**: API that creates Ajax requests & sends them to a server
 
 ## Architectural constraints
 
@@ -39,6 +46,8 @@
 
 ## Server responses
 
+- server receives requests by listening to a specific address or port
+- server routes each request to the code that can handle it
 - return HTTP status codes
   - **2xx**: successful response
   - **4xx**: client error
@@ -51,3 +60,29 @@
   - **401**: client is not authorized
   - **404**: server couldn't find requested resource
   - **500**: generic internal server error
+
+## Working with databases
+
+- various approaches:
+  - each URI maps to a database table (common)
+  - URI maps to a custom resource with data from multiple db tables
+
+## Implementation
+
+### Client
+
+- JavaScript - most common consumer of REST APIs
+  - uses the XMLHttpRequest object & Ajax
+- other modern languages can consume REST APIs
+
+### Server
+
+- JSON - common format for server responses
+- common languages for developing server functionality:
+  - JavaScript/Node.js
+    - usually using Express
+  - Python
+  - Java
+  - PHP
+  - C#/.NET
+  - Go
